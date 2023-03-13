@@ -5,6 +5,7 @@ int main(){
   int tomb[13] = {1,2,3,4,5,6,7,8,9,10,11,12,-1};
   int darab = 6;
   int temp = 0, len = 0;
+  //ellenőrzés hogy a darab nagyobb e mint a tömb hosszúsága
     for (int i = 0; tomb[i] != -1; i++)
     {
         len++;
@@ -12,7 +13,7 @@ int main(){
     if(darab >= len){
         tomb[0] = -1;
     }
-
+  //tömbből való törlés
     for (int i = 0; i <= len; i++)
     {
         if (tomb[i] == -1)
@@ -25,7 +26,7 @@ int main(){
             temp++;
         }
     }
-  
+  //új tömb kiíratása (zh-n nem kell semmit kiírni)
     for (int i = 0; tomb[i] != -1; i++)
     {
        printf("%d\n",tomb[i]);    
